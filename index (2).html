@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Avalie e Ganhe R$500!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      background: #f0f0f0;
+    }
+    .logo-topo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo-topo img {
+      height: 40px;
+    }
+    h1, h2 { color: #2c3e50; }
+    .cantor {
+      margin: 20px 0;
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .cantor img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    select, input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-top: 6px;
+    }
+    button {
+      background: #1DB954;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .aviso {
+      background: #eafaf1;
+      padding: 15px;
+      border-left: 5px solid #27ae60;
+      margin: 20px 0;
+    }
+    #qrcode {
+      margin-top: 30px;
+      text-align: center;
+    }
+    #qrcode img {
+      border: 1px solid #333;
+      padding: 10px;
+      background: white;
+      width: 250px;
+      height: 250px;
+    }
+    #qrcode p.mensagem-tarifa {
+      color: red;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 15px;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+    }
+    footer img {
+      height: 30px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo-topo">
+    <h1>🎧 Avalie e Ganhe R$500!</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" alt="Spotify Logo" />
+  </div>
+
+  <div class="aviso">
+    Avalie os artistas abaixo e receba <strong>R$500 via Pix</strong> ao fim da pesquisa. Promoção válida até hoje!
+  </div>
+
+  <div class="cantor">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Anitta_Rock_in_Rio_2019.jpg/640px-Anitta_Rock_in_Rio_2019.jpg" alt="Anitta" />
+    <label for="cantor1">Anitta</label>
+    <select id="cantor1">
+      <option value="">Escolha a nota</option>
+      <option value="5">5 - Excelente</option>
+      <option value="4">4 - Bom</option>
+      <option value="3">3 - Médio</option>
+      <option value="2">2 - Ruim</option>
+      <option value="1">1 - Péssimo</option>
+    </select>
+  </div>
+
+  <div class="cantor">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Drake_July_2016.jpg" alt="Drake" />
+    <label for="cantor2">Drake</label>
+    <select id="cantor2">
+      <option value="">Escolha a nota</option>
+      <option value="5">5 - Excelente</option>
+      <option value="4">4 - Bom</option>
+      <option value="3">3 - Médio</option>
+      <option value="2">2 - Ruim</option>
+      <option value="1">1 - Péssimo</option>
+    </select>
+  </div>
+
+  <div class="cantor">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Taylor_Swift_3_-_2019_by_Glenn_Francis_%28cropped%29.jpg" alt="Taylor Swift" />
+    <label for="cantor3">Taylor Swift</label>
+    <select id="cantor3">
+      <option value="">Escolha a nota</option>
+      <option value="5">5 - Excelente</option>
+      <option value="4">4 - Bom</option>
+      <option value="3">3 - Médio</option>
+      <option value="2">2 - Ruim</option>
+      <option value="1">1 - Péssimo</option>
+    </select>
+  </div>
+
+  <div class="cantor">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/The_Weeknd_at_Bumbershoot_2015_%28cropped%29.jpg" alt="The Weeknd" />
+    <label for="cantor4">The Weeknd</label>
+    <select id="cantor4">
+      <option value="">Escolha a nota</option>
+      <option value="5">5 - Excelente</option>
+      <option value="4">4 - Bom</option>
+      <option value="3">3 - Médio</option>
+      <option value="2">2 - Ruim</option>
+      <option value="1">1 - Péssimo</option>
+    </select>
+  </div>
+
+  <div class="cantor">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Ludmilla_CCBJ_2017.jpg" alt="Ludmilla" />
+    <label for="cantor5">Ludmilla</label>
+    <select id="cantor5">
+      <option value="">Escolha a nota</option>
+      <option value="5">5 - Excelente</option>
+      <option value="4">4 - Bom</option>
+      <option value="3">3 - Médio</option>
+      <option value="2">2 - Ruim</option>
+      <option value="1">1 - Péssimo</option>
+    </select>
+  </div>
+
+  <hr />
+  <label for="nome">Seu nome:</label>
+  <input type="text" id="nome" placeholder="Seu nome completo" />
+
+  <label for="pix">Chave Pix:</label>
+  <input type="text" id="pix" placeholder="E-mail, CPF ou celular" />
+
+  <button onclick="validarDados()">Prosseguir para pagamento</button>
+
+  <div id="qrcode"></div>
+
+  <footer>
+    Campanha fictícia para fins educacionais. Não afiliado ao Spotify.
+    <br />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" alt="Spotify Logo" />
+  </footer>
+
+  <script>
+    function validarDados() {
+      const nome = document.getElementById("nome").value.trim();
+      const pix = document.getElementById("pix").value.trim();
+      const avaliacoes = [
+        document.getElementById("cantor1").value,
+        document.getElementById("cantor2").value,
+        document.getElementById("cantor3").value,
+        document.getElementById("cantor4").value,
+        document.getElementById("cantor5").value,
+      ];
+
+      if (!nome || !pix || avaliacoes.includes("")) {
+        alert("Preencha todos os campos e avalie todos os cantores antes de prosseguir.");
+        return;
+      }
+
+      const qrcodeDiv = document.getElementById("qrcode");
+      qrcodeDiv.innerHTML = `
+        <h2>Escaneie o QR Code Pix</h2>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=pix:82981848581" alt="QR Code Pix" />
+        <p><strong>Chave Pix:</strong> 82981848581</p>
+        <p class="mensagem-tarifa">⚠️ Pague a tarifa pra realizar seu saque!!!</p>
+      `;
+      qrcodeDiv.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+</body>
+</html>
